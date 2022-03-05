@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <title>Forrest Gump Fan Club - Home</title>
+    <meta name="author" content="Christopher N, X, X" />
+    <meta name="description" content="Main page of Forrest Gump Fan Page" />
+    <meta name="keywords" content="fan club, Fan Club, Forrest Gump, Gump, Forrest, Gump Locations, Locations">
+    <link rel="stylesheet" href="style/ForrsestGumpLocations.css">
+</head>
+
+<body>
+    <center>
+        <img src="images/Logo.png" alt="Forrest Gump Fan Club Logo">
+    </center>
+
+    <nav>
+
+        <center>
+            <ul>
+                <a href="main.html">Home</a>
+                <a href="Summary.html">Summary</a>
+                <a href="ActorsGump.html">Actors</a>
+                <a href="Forrest_Gump-Locations.html">Locations</a>
+            </ul>
+        </center>
+    </nav>
+    <h2>Contact Us</h2>
+    <form method="get" action="mailto:tim.cook@apple.com">
+        <fieldset>
+            <Legend>Personal Information</Legend>
+            <p>
+
+
+
+            <p>
+                <!--Creating a lable and an input text box for entering the user's name-->
+                Name:
+                <input type="text" id="name" required>
+
+            </p>
+
+
+            <p>
+                <!--Creating a label and an phone number input box for letting the user enter thier phone number -->
+                Phone Number:
+                <input placeholder="123-123-1234" type="tel" name="telFeild" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"
+                    title="Phone number must have 10 digits in this format 123-123-1234" />
+            </p>
+            <p>
+                <!--Creating a label and an email input box for letting the user enter thier email-->
+                Email:
+                <input placeholder="example@gmail.com" type="email" name="emailFeild"
+                    title="Email must in clude @gmail.com, @outlook.com, etc." maxlength="33" required>
+            </p>
+
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Message
+            </legend>
+            <p>
+                Subject: <input type="text" name="Subject" id="subject" required>
+            </p>
+            <p>
+
+                Please enter today's date: <input required type="date" name="today" id="today">
+            </p>
+            <p>
+                <textarea name="MessageBody" id="msgBody" cols="30" rows="10" required></textarea>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Email Subscription</legend>
+            <p>
+
+                <label>Would you like to sign up for the email subscription?
+                    <input name="option" value="Yes" type="radio" checked required />
+                    Yes
+                    <input name="option" value="No" type="radio" required />
+                    No
+
+
+                </label>
+
+            </p>
+            <p> How did you hear about us? <input type="checkbox" name="email" id="byEmail" required> By Email
+                <input type="checkbox" name="wordOfMouth" id="Mouth" required> By word of mouth
+            </p>
+
+        </fieldset>
+        <button>Submit</button>
+        <input type="reset" value="Clear">
+    </form>
+
+
+</body>
+
+</html>

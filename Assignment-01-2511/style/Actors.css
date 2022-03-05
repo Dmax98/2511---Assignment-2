@@ -1,0 +1,67 @@
+tr:nth-child(even) {
+    background-color: grey;
+    color: black;
+}
+
+
+table, th, td {
+   
+   margin-left: auto;
+   margin-right: auto;
+    text-align: left;
+    table-layout: auto;
+    margin: 0.5em;
+    border: black solid 1px;
+}
+hr{
+    position: relative;
+   border-color: black;
+}
+body {
+    background-color: #c4c090;
+    margin: 2em;
+}
+
+a:hover {
+    border: 2cm;
+    color: #00FF00;
+}
+
+img {
+    width: 32ex;
+    height: 16ex;
+}
+
+a::after {
+    color: red;
+}
+
+a::before {
+    color: blue;
+}
+
+a::after {
+    color: black;
+}
+
+a::after {
+    background-color: #90C4C0;
+}
+
+nav {
+    justify-content: space-around;
+    padding: 0.25em;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    text-align: center;
+}
+
+nav a {
+    padding: 2em;
+}
+
+a{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
