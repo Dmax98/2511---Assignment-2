@@ -2,34 +2,44 @@ tr:nth-child(even) {
     background-color: grey;
     color: black;
 }
-
-
+/* img{
+    width: 50%;
+    height: 50%;
+} */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 table, th, td {
-   
-   
+
+
     text-align: left;
     table-layout: auto;
     margin: 0.5em;
     border: black solid 1px;
 }
-hr{
+
+hr {
     position: relative;
-   border-color: black;
+    border-color: black;
 }
+
 body {
     background-color: #c4c090;
     margin: 2em;
 }
-
+img{
+    width: 50px;
+    height: 50px;
+}
 a:hover {
     border: 2cm;
     color: #00FF00;
 }
 
-img {
+/* img {
     width: 32ex;
     height: 16ex;
-}
+} */
 
 a::after {
     color: red;
@@ -60,7 +70,107 @@ nav a {
     padding: 2em;
 }
 
-a{
+a {
     padding: 5px 15px;
     border-radius: 10px;
+}
+
+    .card-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns:  1fr 1fr;
+      
+        /*   other styling */
+        
+        margin-inline: auto;
+}
+
+.card p {
+    grid-column: 2;
+    font-size: 10pt;
+    /* padding-bottom: 1rem;
+    padding-right: 1em; */
+}
+.grid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row dense;
+    grid-gap: 20px;
+}
+
+.box {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-rows: subgrid;
+}
+.card{
+    grid-column: span 2;
+    display: grid;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.card figcaption {
+    grid-column: 2;
+    /* padding-top: 1rem;
+    padding-right: 1em; */
+    font-size: 1.75rem;
+    /* line-height: 1; */
+}
+.card img{
+   grid-column:1 ;
+   grid-row: 1/2;
+   width: 100%;
+   height: 100%;
+}
+.text{
+    grid-row: 1 / 3;
+    font-size: 10pt;
+}
+
+.footer{
+
+}
+.header{
+
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199) {
+
+    header {
+        background-color: lightgray;
+    }
+
+    section {
+        color: black;
+        font-size: medium;
+
+        background-color: lightgray;
+    }
+
+    footer {
+        background-color: lightgrey;
+    }
+
+
+    .menu {
+        background-color: white;
+    }
+
+    .content {
+        background-color: lightgray;
+    }
+
+
 }
