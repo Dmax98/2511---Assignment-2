@@ -1,11 +1,88 @@
 .contents{
+    background-color: #c4c090;
+    margin: 2em;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: .2fr 3.8fr 4fr 4fr 4fr .2fr;
-    grid-template-areas: "header header header header header "
-    "main main main main main "
-    "summary summary summary summary summary"
-    "locations locations locations locations locations"
-    "actors actors actors actors actors"
-    "footer footer footer footer footer";
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 2fr 2fr 2fr .1fr;
+    grid-template-areas: "header"
+    "about"
+    "content"
+    "contact"
+    "footer";
 }
+
+.header{
+    grid-area: header;
+}
+.logo{
+    margin: auto;
+    width: 32ex;
+    height: 16ex;
+}
+nav{
+    float: right;
+    padding: 0.25em;
+}
+.about{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: about;
+    
+}
+.movie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: auto;
+   
+}
+h2{
+   position:static; 
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: contact;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.content{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: content;
+
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+grid-template-areas: 
+
+"locations actors"
+"summary summary";
+
+}
+h1{
+    grid-area: title;
+}
+#Locations{
+grid-area: locations;
+background-color: beige;
+}
+
+#Actors{
+grid-area: actors;
+background-color: beige;
+}
+
+#Summary{
+grid-area: summary;
+background-color: beige;
+}
+
