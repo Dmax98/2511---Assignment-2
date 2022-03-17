@@ -13,19 +13,20 @@
 }
 
 .header{
+    background-color: beige;
     grid-area: header;
 }
 .logo{
     margin: auto;
-    width: 32ex;
-    height: 16ex;
+    width: 16ex;
+    height: auto;
 }
 nav{
     float: right;
     padding: 0.25em;
 }
 .about{
-   
+   background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,45 +45,45 @@ h2{
    position:static; 
 }
 .contact{
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: contact;
 }
-
+img{
+    width: 32ex;
+    height: auto;
+}
 .footer{
+    background-color: beige;
     grid-area: footer;
 }
 
 .content{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-area: content;
-
+grid-area: content;
+background-color: beige;
+margin: 20px auto;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr ;
-grid-template-areas: 
-
-"locations actors"
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "location actor"
 "summary summary";
-
 }
-h1{
-    grid-area: title;
+h3{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 #Locations{
-grid-area: locations;
-background-color: beige;
+    grid-area: location;
 }
 
 #Actors{
-grid-area: actors;
-background-color: beige;
+grid-area: actor;
+
 }
 
 #Summary{
 grid-area: summary;
-background-color: beige;
 }
 
