@@ -1,0 +1,116 @@
+.header {
+    background-color: grey;
+color: white;
+    font-size: medium;
+}
+.intro {
+    background-color: lightgray;
+    font: medium;
+    
+}
+.intro  img{
+    height: 45%;
+    width: 45%;
+}
+.header img {
+    
+    width: 25%;
+    height: 25%;
+}
+.contextualImage img {
+    width: 50%;
+    height: 50%;
+    
+}
+.contextualImage {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+[class *= "column-"]{
+    float: left;
+    padding: 20px;
+}
+
+.footer {
+    font-size: x-small;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+html{
+    margin: 25px;
+    
+}
+.box-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    gap: 20px;
+}
+[class = "column-"] {
+    width: 100%;
+}
+.contents {
+    margin: 4ex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px ;
+    display: grid;
+    grid-template-areas: "Chippewa Square, Savannah, GA", "Yemassee Square, Yemassee, South Carolina", " Hunting Island, South Carolina", "Lincon Mimorial Reflecting Pool, Washington, D.C", "Marshall Point Lighthouse, St. George, Maine", "Blueridge Parkway, North Carolina", "Chippewa Square, Savannah, GA", "Twin Arrows Trading Post, Coconino County, Arizona", "The Watergate Hotel, Washington, DC", "Monument Valley, Navajo County, Arizona";
+}
+.header nav ul{
+     float: left; 
+}
+
+.content img {
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.content {
+    
+    background-color: grey;
+    color: white;
+    border: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+}
+
+.box {
+    display: grid;
+}
+
+.box img {
+    grid-column: 0;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.box figcaption {
+    grid-column: 2;
+    font-size: medium;
+}
+
+.box p {
+    font-size: medium;
+    grid-column: 1;
+    grid-row: 1;
+}
