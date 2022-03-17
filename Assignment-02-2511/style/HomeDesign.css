@@ -90,7 +90,12 @@ grid-area: summary;
 
 /* Small Screen */
 @media  screen and  (max-width: 640) {
-    
+    .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+   
+
 }
 /* Medium Screen */
 @media screen and (min-width: 641) and (max-width: 1007) {
