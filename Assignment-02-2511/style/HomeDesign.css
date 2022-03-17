@@ -37,7 +37,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 400px;
     width: auto;
    
 }
@@ -64,6 +64,7 @@ img{
 grid-area: content;
 background-color: beige;
 margin: 20px auto;
+display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 grid-template-areas: "location actor"
