@@ -90,7 +90,8 @@ align-self: center;
 /* Small Screen */
 
 @media screen and (max-width: 640px) {
-    h1 > .content{
+    /* Hello */
+    div.content{
         grid-area: content;
         background-color: beige;
         margin: 20px;
