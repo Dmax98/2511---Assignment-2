@@ -34,7 +34,11 @@
         A Place to learn about the academy award winning film Forest Gump
     </h2>
     <br>
-<img class="movie" src="images/movie cover.jpg" alt="Cover of Forest Gump Film"> 
+    <picture class="movie">
+        <source srcset=“small-movie.jpg” media=“(max-width:600px)”>
+        <source srcset=“medium-movie.jpg” media=“(max-width:1200px)”>
+        <img srcset=“big-movie.jpg”>
+    </picture>
 </div>
 
 <div class="content">
