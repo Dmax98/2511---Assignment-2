@@ -1,109 +1,130 @@
-.contents{
+.contents {
     background-color: #c4c090;
     margin: 2em;
     display: grid;
-    
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 2fr 2fr 2fr .1fr;
-    grid-template-areas: "header"
-    "about"
-    "content"
-    "contact"
-    "footer";
+    grid-template-areas: "header" "about" "content" "contact" "footer";
 }
 
-.header{
+.header {
     background-color: beige;
     grid-area: header;
 }
-.logo{
+
+.logo {
     margin: auto;
     width: 16ex;
     height: auto;
 }
-nav{
+
+nav {
     float: right;
     padding: 0.25em;
 }
-.about{
-   background-color: gray;
+
+.about {
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: about;
-    
 }
-.movie{
+
+.movie {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
     width: auto;
-   
 }
-h2{
-   position:static; 
+
+h2 {
+    position: static;
 }
-.contact{
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: contact;
-}
-img{
+
+
+img {
     width: 32ex;
     height: auto;
 }
-.footer{
+
+.footer {
     background-color: beige;
     grid-area: footer;
 }
 
-.content{
-grid-area: content;
-background-color: beige;
-margin: 20px auto;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas: "location actor"
-"summary summary";
+
+.content {
+    float: left;
+    grid-area: content;
+    background-color: beige;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "location actor" "summary summary";
 }
-h3{
+
+
+
+h3 {
     display: flex;
     align-items: center;
     vertical-align: middle;
 }
-#Locations{
+
+#Locations {
     grid-area: location;
 }
 
-#Actors{
-grid-area: actor;
-
+#Actors {
+    grid-area: actor;
 }
 
-#Summary{
-grid-area: summary;
+#Summary {
+    grid-area: summary;
 }
+
 
 /* Small Screen */
-@media  screen and  (max-width: 640px) {
-    .content{
+
+@media screen and (max-width: 640px) {
+    h1 > .content{
+        grid-area: content;
+        background-color: beige;
+        margin: 20px;
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        grid-template-areas: "location" "actor" "summary";
+    }
+    .subHeader{
+        font-size: large;
+    }
+    h2{
+        font-size: medium;
+    }
+    h3{
+        font-size: xx-large;
+    } 
+    p{
+        font-size: xx-small;
     }
    
-
-}
-/* Medium Screen */
-@media screen and (min-width: 641px) and (max-width: 1007px) {
     
+  
 }
+
+
+/* Medium Screen */
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {}
+
 
 /* Large Screen */
-@media  screen and  (min-width: 1008px ) {
+
+@media screen and (min-width: 1008px) {
     .container {
         margin-left: auto;
         margin-right: auto;
