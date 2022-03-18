@@ -91,7 +91,8 @@ align-self: center;
 
 @media screen and (max-width: 640px) {
     /* Hello */
-    div.content{
+    /* My name is Joe */
+    body > div.content{
         grid-area: content;
         background-color: beige;
         margin: 20px;
