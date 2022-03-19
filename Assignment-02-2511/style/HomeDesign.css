@@ -22,6 +22,14 @@ nav {
     float: right;
     padding: 0.25em;
 }
+/* Placing "Contents from our other pages: " in proper placement */
+div.content > h1{
+    grid-row-start: -4;
+    
+        grid-row: 0;
+        
+        grid-column: 0;
+        }
 
 .about {
     background-color: gray;
@@ -90,8 +98,7 @@ align-self: center;
 /* Small Screen */
 
 @media screen and (max-width: 640px) {
-    /* Hello */
-    /* My name is Joe */
+      
     body > div.content{
         grid-area: content;
         background-color: beige;
