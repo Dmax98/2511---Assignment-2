@@ -6,6 +6,9 @@
     grid-template-rows: .1fr 2fr 2fr 2fr .1fr;
     grid-template-areas: "header" "about" "content" "contact" "footer";
 }
+body{
+    width: 100%;
+}
 
 .header {
     background-color: beige;
@@ -30,6 +33,10 @@ div.content > h1{
         
         /* grid-column: 0; */
 }
+body > div.header > img {
+    width: 10%;
+    height: 10%;
+}
 
 .about {
     background-color: gray;
@@ -46,9 +53,12 @@ div.content > h1{
 
 .contact{
     background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "contactUs" "form";
+    grid-template-columns: .2fr 1fr;
+    grid-template-rows: .2fr ;
+    align-items: flex-start;
+    justify-content:flex-start;
     grid-area: contact;
 }
 img{
@@ -74,6 +84,14 @@ grid-template-rows: 1fr 1fr;
 grid-template-areas: "location actor"
 "summary summary";
 }
+#Form{
+    margin: 3em;
+    grid-area: form;
+}
+#contactText{
+    text-align: center;
+    font-size: xx-large;
+}
 
 #Locations{
     grid-area: location;
@@ -98,22 +116,64 @@ align-self: center;
 /* Small Screen */
 
 @media only screen and (max-width : 640px) {
-      
+    /* #Locations > h3{
+        text-decoration: underline;
+        float: left;
+        font-size: x-large;
+       
+    } */
+    #Actors > h3 {
+        text-decoration: underline;
+    }
+    #Locations > h3 {
+        text-decoration: underline;
+    }
+    #Summary > h3 {
+        text-decoration: underline;
+    }
+   #Locations > p {
+       font-size: large;
+   }
+    #Actors > p{
+            font-size: large;
+        
+    }
+    #Summary > p{
+        font-size: large;
+    }
+    #Summary > p > img {
+        align-items: flex-start;
+        float: left;
+    }
+
+    #Actors > p > img {
+     
+    }
+    #Actors > p > img {
+        float: left;
+    }
+    #Locations > p > img {
+        align-items: flex-start;
+        float: left;
+        
+        align-content: space-around;
+    }
     body > div.content{
         display: grid;
         grid-area: content;
         background-color: beige;
-        padding: 2em;
-        margin-left: auto;
-        margin-right: auto;
+        padding: .8em;
+        /* margin-left: -50px;
+        margin-right: -50px ; */
         
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "location" "actor" "summary";
         width: 100%;
     }
-    .subHeader{
-        font-size: large;
+   
+    body > div.content > h1 {
+        font-size:xx-large;
     }
     div.content > h1{
         grid-row-start: -6;
@@ -127,6 +187,9 @@ align-self: center;
     } 
     p{
         font-size: xx-small;
+    }
+    body > div.content > h1 {
+        grid-column: -2;
     }
    
 
