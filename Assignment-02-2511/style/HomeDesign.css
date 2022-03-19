@@ -26,10 +26,10 @@ nav {
 div.content > h1{
     grid-row-start: -4;
     
-        grid-row: 0;
+        /* grid-row: 0; */
         
-        grid-column: 0;
-        }
+        /* grid-column: 0; */
+}
 
 .about {
     background-color: gray;
@@ -64,10 +64,10 @@ img{
     align-items: baseline;
     
 }
-.content{
+div.content{
 grid-area: content;
 background-color: beige;
-margin: 20px auto;
+margin: 20px 20px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
@@ -97,13 +97,16 @@ align-self: center;
 
 /* Small Screen */
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width : 640px) {
       
     body > div.content{
+        display: grid;
         grid-area: content;
         background-color: beige;
-        margin: 20px;
-        display: grid;
+        padding: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "location" "actor" "summary";
@@ -111,6 +114,10 @@ align-self: center;
     }
     .subHeader{
         font-size: large;
+    }
+    div.content > h1{
+        grid-row-start: -6;
+            grid-column: 0;
     }
     h2{
         font-size: medium;
