@@ -9,7 +9,9 @@
 body{
     width: 100%;
 }
-
+button, input{
+    cursor: pointer;
+    }
 .header {
     background-color: beige;
     grid-area: header;
