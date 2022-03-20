@@ -1,11 +1,11 @@
-tr:nth-child(even) {
-    background-color: grey;
+/* tr:nth-child(even) {
+    
     color: black;
-}
+} */
 
 
 table, th, td {
-   
+   background-color: #13999F;
    margin-left: auto;
    margin-right: auto;
     text-align: left;
@@ -18,7 +18,7 @@ hr{
    border-color: black;
 }
 body {
-    background-color: #c4c090;
+    background-color:   #fffacd;
     margin: 2em;
 }
 
@@ -47,6 +47,13 @@ a::after {
 a::after {
     background-color: #90C4C0;
 }
+#fullImageRes{
+    width: 75%;
+    height: 75%;
+}
+#largeText{
+    font-size: large;
+}
 
 nav {
     justify-content: space-around;
@@ -65,3 +72,6 @@ a{
     padding: 5px 15px;
     border-radius: 10px;
 }
+/* body{
+   background-color:  #d29d05;
+} */

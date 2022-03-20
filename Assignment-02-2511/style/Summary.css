@@ -1,24 +1,29 @@
-tr:nth-child(even) {
-    background-color: grey;
-    color: black;
-}
+
 
 hr{
     position: relative;
    border-color: black;
 }
 body {
-    background-color: #c4c090;
-    margin: 2em;
+    
+    margin: 2em;padding: auto;
 }
 
 a:hover {
     border: 2cm;
     color: #00FF00;
 }
+article,footer{
+    margin: 2em;
+}
 
+.header {
+    /* background-color: beige; */
+    grid-area: header;
+    
+}
 img {
-float: right;
+
     width: 32ex;
     height: 16ex;
 }
@@ -43,6 +48,7 @@ nav {
     justify-content: space-around;
     padding: 0.25em;
     display: flex;
+    font-display: center;
     align-items: center;
     height: 20px;
     text-align: center;

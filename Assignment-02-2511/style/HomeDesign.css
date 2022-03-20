@@ -5,9 +5,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 2fr 2fr 2fr .1fr;
     grid-template-areas: "header" "about" "content" "contact" "footer";
+    grid-gap: 20px;
 }
-body{
+/* body > div.header > img {
     width: 100%;
+    height: 100%;
+} */
+body{
+    margin: auto;
 }
 button, input{
     cursor: pointer;
@@ -15,6 +20,7 @@ button, input{
 .header {
     background-color: beige;
     grid-area: header;
+    
 }
 
 .logo {
@@ -36,12 +42,12 @@ div.content > h1{
         /* grid-column: 0; */
 }
 body > div.header > img {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
 }
 
 .about {
-    background-color: gray;
+    background-color: #c4c090;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +60,7 @@ body > div.header > img {
 }
 
 .contact{
-    background-color: gray;
+    background-color: beige;
     display: grid;
     grid-template-areas: "contactUs" "form";
     grid-template-columns: .2fr 1fr;
@@ -69,7 +75,8 @@ img{
 }
 
 .footer {
-    background-color: beige;
+    background-color: #292929;
+    /* background-color: beige; */
     grid-area: footer;
 }
 .content h1{
@@ -118,12 +125,44 @@ align-self: center;
 /* Small Screen */
 
 @media only screen and (max-width : 640px) {
+    #Form > fieldset:nth-child(2) > p:nth-child(5){
+        font-size: medium;
+    }
+    body{
+       background-color:  #d29d05;
+    }
+    .contact {
+        background-color: #13999f;
+        color: white;
+    }
+    /* html, body{
+        background-color: #c5c8c9 ;
+    } */
     /* #Locations > h3{
         text-decoration: underline;
         float: left;
         font-size: x-large;
        
     } */
+    button:{
+        outline:2px solid blue; background-color: red; color: white;  text-decoration:underline;
+        }
+        button:hover{
+            outline:2px solid blue; background-color: red; color: white;  text-decoration:underline;
+            }
+    body > div.contact
+     {
+        font-size: smaller;
+        color: white;
+        background-color: #13999f;
+    }
+    #Form > fieldset:nth-child(1) > legend{
+        font-size:larger;
+    }
+    body > div.header > img {
+        width: 50px;
+        height: 50px;
+    }
     #Actors > h3 {
         text-decoration: underline;
     }
@@ -161,12 +200,13 @@ align-self: center;
         align-content: space-around;
     }
     body > div.content{
+        margin: auto;
         display: grid;
         grid-area: content;
-        background-color: beige;
-        padding: .8em;
-        /* margin-left: -50px;
-        margin-right: -50px ; */
+        background-color: #13999f;
+        color: white;
+        /* padding: 500px; */
+        margin: auto;
         
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -193,7 +233,42 @@ align-self: center;
     body > div.content > h1 {
         grid-column: -2;
     }
-   
+    .contact{
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "contactUs" "form";
+        grid-template-columns:  1fr;
+        grid-template-rows: .2fr ;
+        align-items: flex-start;
+        justify-content:flex-start;
+        grid-area: contact;
+    }
+    #Form > fieldset:nth-child(1) > p:nth-child(3) {
+        font-size:medium;
+    }
+    #Form > fieldset:nth-child(1) > p:nth-child(4){
+        font-size: medium;
+    }
+    #Form > fieldset:nth-child(1) > p:nth-child(5){
+                font-size: medium;
+    }
+
+    #Form > fieldset:nth-child(2) > p:nth-child(2){
+        font-size: medium;
+    }
+    #Form > fieldset:nth-child(2) > p:nth-child(3){
+        font-size: medium;
+    }
+    #Form > fieldset:nth-child(2) > p:nth-child(4){
+        font-size: medium;
+    }
+    #Form > fieldset:nth-child(3) > p:nth-child(3){
+        font-size: medium;
+    }
+    #Form > fieldset:nth-child(3) > p:nth-child(2) {
+        font-size: medium;
+    }
+                    
 
 }
 /* Medium Screen */
