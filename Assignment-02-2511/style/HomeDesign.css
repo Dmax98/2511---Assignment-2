@@ -20,6 +20,18 @@ button, input{
     
 }
 
+<<<<<<< HEAD
+=======
+.Logo {
+   
+    width: 100px;
+    height: auto;
+}
+div.contact, div.about, div.header, div.footer {
+    margin: 10px 10px;
+}
+
+>>>>>>> 14c98108ee08c905e4a842729907f8af49ffd595
 nav {
     float: right;
     padding: 0.25em;
@@ -62,6 +74,7 @@ body > div.header > img {
     align-items: flex-start;
     justify-content:flex-start;
     grid-area: contact;
+    margin: 10px 10px;
 }
 img{
     width: 300px;
@@ -71,6 +84,7 @@ img{
 .footer {
     background-color: #292929;
     /* background-color: beige; */
+    margin: 10px 10px;
     grid-area: footer;
 }
 .content h1{
@@ -87,6 +101,7 @@ grid-template-rows: 1fr 1fr;
 grid-template-areas: "location actor"
 "summary summary";
 }
+
 #Form{
     margin: 3em;
     grid-area: form;
@@ -123,6 +138,9 @@ align-self: center;
 /* Small Screen */
 
 @media only screen and (max-width : 640px) {
+    .content{
+        margin: 20px -20px;
+    }
     #Form > fieldset:nth-child(2) > p:nth-child(5){
         font-size: medium;
     }
@@ -185,18 +203,18 @@ align-self: center;
         align-content: space-around;
     }
     body > div.content{
-        margin: auto;
+        margin: 20px 20px ;
         display: grid;
         grid-area: content;
         background-color: #13999f;
         color: white;
         /* padding: 500px; */
-        margin: auto;
+        /* margin: auto; */
         
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "location" "actor" "summary";
-        width: 100%;
+        
     }
    
     body > div.content > h1 {
@@ -261,8 +279,28 @@ align-self: center;
 }
 /* Medium Screen */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+<<<<<<< HEAD
      
     .medium-movie{
+=======
+       /* #Locations > h3{
+        text-decoration: underline;
+        float: left;
+        font-size: x-large;
+       
+    } */
+    .contact{
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "contactUs" "form";
+        grid-template-columns:  1fr;
+        grid-template-rows: .2fr ;
+        align-items: flex-start;
+        justify-content:flex-start;
+        grid-area: contact;
+    }
+    .movie{
+>>>>>>> 14c98108ee08c905e4a842729907f8af49ffd595
         width: auto;
     }
     .content > h3 {
@@ -279,6 +317,13 @@ align-self: center;
         font-size: x-large;
        
     }
+
+    body > div.header > img {
+        width: 100px;
+        height: 100px;  
+        object-fit: cover; 
+    }
+
     body > div.content{
         display: grid;
         grid-area: content;
@@ -287,7 +332,7 @@ align-self: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "location actor" "summary summary";
-        width: 100%;
+        
     }
     #Locations{
         grid-area: location;
@@ -320,4 +365,107 @@ align-self: center;
         margin-right: auto;
         width: 100%;
     }
+    .movie{
+        width: auto;
+    }
+    #Actors > h3 {
+        text-decoration: underline;
+    }
+    #Locations > h3 {
+        text-decoration: underline;
+    }
+    #Summary > h3 {
+        text-decoration: underline;
+    }
+  
+    .about > p{ 
+        font-size: x-large;
+       
+    }
+    body > div.content{
+        display: grid;
+        grid-area: content;
+        background-color: beige;
+        padding: 20px;
+       
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "location actor" "summary summary";
+        width: 100%;
+    }
+    #Locations{
+    grid-area: location;
+    align-self: center;
+      justify-self: center;
+    }
+    
+    #Actors{
+    grid-area: actor;
+    align-self: center;
+      justify-self: center;
+    
+    }
+    .small-movie{
+        width: auto;
+    }
+    
+    #Summary{
+    grid-area: summary;
+    align-self: center;
+      justify-self: center;
+    }
+
+    body > div.content > h1 {
+        font-size:x-large;
+    }
+
+     body > div.header > img {
+        width: 200px;
+        height: 200px;  
+        object-fit: cover;  
+        
+        }
+
+        #contactText{
+            text-align: center;
+            transform: translate(140%);
+            font-size: xx-large;
+        }
+
+        #Form{
+            margin: 2em;
+            grid-area: form;
+        
+        
+     transform: translate(175%);
+     }
+    #Form > fieldset:nth-child(1) > p:nth-child(3) {
+          font-size:large;
+    }
+    #Form > fieldset:nth-child(1) > p:nth-child(4){
+            font-size: large;
+    }
+    #Form > fieldset:nth-child(1) > p:nth-child(5){
+            font-size: large;
+        }
+    
+    #Form > fieldset:nth-child(2) > p:nth-child(2){
+            font-size: large;
+        }
+    #Form > fieldset:nth-child(2) > p:nth-child(3){
+            font-size: large;
+    }
+    #Form > fieldset:nth-child(2) > p:nth-child(4){
+            font-size: large;
+    }
+    #Form > fieldset:nth-child(3) > p:nth-child(3){
+            font-size: large;
+    }
+    #Form > fieldset:nth-child(3) > p:nth-child(2) {
+            font-size: large;
+        }    
+
 }
+
+/*position: fixed; /* or absolute */
