@@ -312,6 +312,13 @@ align-self: center;
         font-size: x-large;
        
     }
+
+    body > div.header > img {
+        width: 100px;
+        height: 100px;  
+        object-fit: cover; 
+    }
+
     body > div.content{
         display: grid;
         grid-area: content;
