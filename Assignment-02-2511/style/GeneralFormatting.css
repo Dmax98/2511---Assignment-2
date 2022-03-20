@@ -1,0 +1,56 @@
+#fullImageRes{
+    width: 55%;
+    height: 55%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* .contents {
+    background-color: #c4c090;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 2fr 2fr 2fr .1fr;
+    grid-template-areas:
+        "header"
+        "about"
+        "content"
+        "contact"
+        "footer";
+    grid-gap: 20px;
+} */
+
+.logo {
+    margin: auto;
+    width: 16ex;
+    height: auto;
+}
+
+/* nav {
+    float: right;
+    padding: 0.25em;
+} */
+
+#blueforeground{
+    background-color: #13999f;
+    color: white;
+}
+#yellowbackground{
+   background-color:  #fffacd;
+}
+
+button, input{
+    cursor: pointer;
+    }
+    button:focus{
+        outline:2px solid blue;   text-decoration:underline;
+        }
+body{
+    width: 100%;
+}
+#colorwhite {
+    color: white;
+}
+div{
+    display: block;
+}
