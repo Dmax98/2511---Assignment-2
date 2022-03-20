@@ -74,7 +74,7 @@ body > div.header > img {
     align-items: flex-start;
     justify-content:flex-start;
     grid-area: contact;
-    margin: 10px 10px;
+    margin: 25px 25px;
 }
 img{
     width: 300px;
