@@ -20,8 +20,7 @@ button, input{
     
 }
 
-<<<<<<< HEAD
-=======
+
 .Logo {
    
     width: 100px;
@@ -31,7 +30,7 @@ div.contact, div.about, div.header, div.footer {
     margin: 10px 10px;
 }
 
->>>>>>> 14c98108ee08c905e4a842729907f8af49ffd595
+
 nav {
     float: right;
     padding: 0.25em;
@@ -279,17 +278,17 @@ align-self: center;
 }
 /* Medium Screen */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-<<<<<<< HEAD
+
      
     .medium-movie{
-=======
+
        /* #Locations > h3{
         text-decoration: underline;
         float: left;
-        font-size: x-large;
+        font-size: x-large;*/
        
-    } */
-    .contact{
+    } 
+.contact{
         background-color: gray;
         display: grid;
         grid-template-areas: "contactUs" "form";
@@ -300,7 +299,7 @@ align-self: center;
         grid-area: contact;
     }
     .movie{
->>>>>>> 14c98108ee08c905e4a842729907f8af49ffd595
+
         width: auto;
     }
     .content > h3 {
