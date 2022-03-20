@@ -358,12 +358,15 @@ align-self: center;
     }
 
  
-    #Form{
-        margin: 2em;
-        grid-area: form;
-    
-    
- transform: translate(125%);
+    .contact{
+        background-color: #13999f;
+        display: grid;
+        grid-template-areas: "contactUs" "form";
+        grid-template-columns:  1fr;
+        grid-template-rows: .2fr ;
+        align-items: flex-start;
+        justify-content:flex-start;
+        grid-area: contact;
  }
 #Form > fieldset:nth-child(1) > p:nth-child(3) {
       font-size:large;
