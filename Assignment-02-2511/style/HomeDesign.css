@@ -23,9 +23,9 @@ button, input{
     
 }
 
-.logo {
-    margin: auto;
-    width: 16ex;
+.Logo {
+   
+    width: 100px;
     height: auto;
 }
 
@@ -45,6 +45,8 @@ body > div.header > img {
     width: 15%;
     height: 15%;
 }
+    
+
 
 .about {
     background-color: #c4c090;
@@ -54,9 +56,10 @@ body > div.header > img {
     grid-area: about;
 }
 .movie{
-    align-self:center;
-    height: 400px;
+    height: 1fr;
     width: auto;
+    align-self:center;
+    
 }
 
 .contact{
@@ -98,6 +101,10 @@ grid-template-areas: "location actor"
     grid-area: form;
 }
 #contactText{
+    text-align: center;
+    font-size: xx-large;
+}
+#discribe{
     text-align: center;
     font-size: xx-large;
 }
@@ -144,7 +151,7 @@ align-self: center;
         font-size: x-large;
        
     } */
-    button:{
+    button:focus{
         outline:2px solid blue; background-color: red; color: white;  text-decoration:underline;
         }
         button:hover{
@@ -187,9 +194,6 @@ align-self: center;
         float: left;
     }
 
-    #Actors > p > img {
-     
-    }
     #Actors > p > img {
         float: left;
     }
@@ -269,17 +273,72 @@ align-self: center;
         font-size: medium;
     }
                     
+    .small-movie{
+        width: auto;
+    }
 
 }
 /* Medium Screen */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .contents{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+       /* #Locations > h3{
+        text-decoration: underline;
+        float: left;
+        font-size: x-large;
+       
+    } */
+    .movie{
+        width: auto;
     }
+    #Actors > h3 {
+        text-decoration: underline;
+    }
+    #Locations > h3 {
+        text-decoration: underline;
+    }
+    #Summary > h3 {
+        text-decoration: underline;
+    }
+  
+    .about > p{ 
+        font-size: x-large;
+       
+    }
+    body > div.content{
+        display: grid;
+        grid-area: content;
+        background-color: beige;
+        padding: 20px;
+        /* margin-left: -50px;
+        margin-right: -50px ; */
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "location actor" "summary summary";
+        width: 100%;
+    }
+    #Locations{
+        grid-area: location;
+        align-self: center;
+      justify-self: center;
+    }
+    
+    #Actors{
+    grid-area: actor;
+    align-self: center;
+      justify-self: center;
+    
+    }
+    
+    #Summary{
+    grid-area: summary;
+    align-self: center;
+      justify-self: center;
+    }
+
+    body > div.content > h1 {
+        font-size:x-large;
+    }
+    
 }
 
 
