@@ -28,6 +28,9 @@ button, input{
     width: 100px;
     height: auto;
 }
+div.contact, div.about, div.header, div.footer {
+    margin: 10px 10px;
+}
 
 nav {
     float: right;
@@ -71,6 +74,7 @@ body > div.header > img {
     align-items: flex-start;
     justify-content:flex-start;
     grid-area: contact;
+    margin: 10px 10px;
 }
 img{
     width: 300px;
@@ -80,6 +84,7 @@ img{
 .footer {
     background-color: #292929;
     /* background-color: beige; */
+    margin: 10px 10px;
     grid-area: footer;
 }
 .content h1{
@@ -96,6 +101,7 @@ grid-template-rows: 1fr 1fr;
 grid-template-areas: "location actor"
 "summary summary";
 }
+
 #Form{
     margin: 3em;
     grid-area: form;
@@ -132,6 +138,9 @@ align-self: center;
 /* Small Screen */
 
 @media only screen and (max-width : 640px) {
+    .content{
+        margin: 20px -20px;
+    }
     #Form > fieldset:nth-child(2) > p:nth-child(5){
         font-size: medium;
     }
@@ -204,18 +213,18 @@ align-self: center;
         align-content: space-around;
     }
     body > div.content{
-        margin: auto;
+        margin: 20px 20px ;
         display: grid;
         grid-area: content;
         background-color: #13999f;
         color: white;
         /* padding: 500px; */
-        margin: auto;
+        /* margin: auto; */
         
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "location" "actor" "summary";
-        width: 100%;
+        
     }
    
     body > div.content > h1 {
@@ -314,7 +323,7 @@ align-self: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "location actor" "summary summary";
-        width: 100%;
+        
     }
     #Locations{
         grid-area: location;
